@@ -42,3 +42,8 @@ pip install -r requirements.txt
 ```bash
 python app.py run
 ```
+## Тестирование
+Запустите тестирование:
+```bash
+pytest tests/test_app.py
+```
