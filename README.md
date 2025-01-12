@@ -47,3 +47,13 @@ python app.py run
 ```bash
 pytest tests/test_app.py
 ```
+![Запуск тестирования](img/tests.png)
+
+## Пример работы программы
+
+![Начальный запуск](img/info_1.png)
+
+![Запись в БД](img/info_2.png)
+
+![Просмотр данных БД](img/info_3.png)
+

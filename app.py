@@ -109,7 +109,7 @@ class MyApp(QWidget):
 
         self.cpu_label.setText(f"ЦП: {cpu}%")
         self.ram_label.setText(f"ОЗУ: {free_ram:.2f}/{total_ram:.2f} ГБ")
-        self.rom_label.setText(f"Диск: {free_disk:.2f}/{total_disk:.2f} ГБ")
+        self.rom_label.setText(f"ПЗУ: {free_disk:.2f}/{total_disk:.2f} ГБ")
 
         if self.is_recording:
             self.record_data(cpu, free_ram, free_disk)
@@ -158,7 +158,7 @@ class DataWindow(QWidget):
 
         self.table.setRowCount(len(rows))
         self.table.setColumnCount(5)
-        self.table.setHorizontalHeaderLabels(["ID", "ЦП (%)", "ОЗУ (ГБ)", "Диск (ГБ)", "Время"])
+        self.table.setHorizontalHeaderLabels(["ID", "ЦП (%)", "ОЗУ (ГБ)", "ПЗУ (ГБ)", "Время"])
 
         for row_idx, row in enumerate(rows):
             for col_idx, value in enumerate(row):
