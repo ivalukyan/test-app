@@ -36,13 +36,32 @@ cd test_app
 ```
 
 4. Установите зависимости:
+### Windows или MacOs
 ```bash
 pip install -r requirements.txt
 ```
+### Linux
+```
+pip3 install -r requirements.txt
+```
+
 5. Запустите скрипт:
+### Windows или MacOs
 ```bash
 python app.py run
 ```
+### Linux
+```bash
+python3 app.py run
+```
+### ВАЖНО! 
+При ошибке запуска на Linux:
+### Debian или Ubuntu
+```bash
+sudo apt update
+sudo apt install libx11-xcb1 libxcb1 libxcb-render0 libxcb-shm0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 libxcb-sync1 libxcb-xfixes0 libxcb-xinerama0 libxcb-xkb1 libxkbcommon0 libxkbcommon-x11-0
+```
+
 ## Тестирование
 Запустите тестирование:
 ```bash
